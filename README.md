@@ -47,13 +47,11 @@ Language: Python
 
 Libraries:
 
-scikit-learn: ML models and evaluation
+        scikit-learn (SVM, DT, KNN, metrics)
 
-ctgan, sdv: Synthetic data generation
+        pandas, numpy, matplotlib, seaborn (data processing & visualization)
 
-pandas, numpy: Data processing
-
-matplotlib, seaborn: Visualization
+        ctgan (for synthetic data generation)
 
 
 
