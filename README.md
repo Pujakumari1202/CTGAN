@@ -1,1 +1,71 @@
-## CTGAN
+## 🧠 Enhancing Classifier Accuracy on Imbalanced Datasets using CTGAN
+
+# 📖 About the Project
+This project addresses the challenge of class imbalance in classification problems by comparing traditional machine learning performance before and after synthetic data augmentation.
+
+Initially, we trained three classifiers — Support Vector Machine (SVM), Decision Tree (DT), and K-Nearest Neighbors (KNN) — on an imbalanced version of the Dry Bean Dataset. As expected, the models showed lower accuracy due to the skewed class distribution.
+
+We first attempted to balance the dataset using a standard GAN (Generative Adversarial Network), but the generated data did not align well with tabular classification requirements and led to poor results.
+
+To overcome this, we used CTGAN (Conditional Tabular GAN), a model specifically designed for generating synthetic tabular data while preserving feature distributions and class relationships. This significantly improved model performance:
+
+SVM: +5% accuracy
+
+Decision Tree: +7% accuracy
+
+KNN: +6% accuracy
+
+This demonstrates the importance of choosing domain-specific generative models like CTGAN when working with structured data.
+
+## 📊 Dataset
+We used the Dry Bean Dataset from the UCI Machine Learning Repository:
+
+Features: 16 numerical attributes (e.g., Area, Perimeter, Compactness)
+
+Target: Type of Bean (7 classes)
+
+The dataset was imbalanced, making it ideal for studying the effect of synthetic oversampling techniques.
+
+## ✨ Features
+Evaluation of ML models (SVM, DT, KNN) on imbalanced data
+
+Attempted oversampling using vanilla GAN (unsuccessful)
+
+Successful augmentation using CTGAN
+
+Detailed comparison of model performance before and after augmentation
+
+## 🛠️ Tech Stack
+Language: Python
+
+Libraries:
+
+scikit-learn: ML models and evaluation
+
+ctgan, sdv: Synthetic data generation
+
+pandas, numpy: Data processing
+
+matplotlib, seaborn: Visualization
+
+
+```bash
+project/
+│
+├── CTGANLast.ipynb         # Full implementation and results
+├── results/                # Accuracy plots and confusion matrices (optional)
+├── README.md
+└── requirements.txt        # Python dependencies
+```
+
+.
+
+## 📈 Results Summary
+| Model         | Accuracy (Before) | Accuracy (After CTGAN) | Improvement |
+| ------------- | ----------------- | ---------------------- | ----------- |
+| KNN           | 92%               | 98%                    | +6%         |
+| SVM           | 93%               | 98%                    | +5%         |
+| Decision Tree | 89%               | 96%                    | +7%         |
+
+
+

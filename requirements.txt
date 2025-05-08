@@ -1,2 +1,9 @@
 ctgan
 sdv
+numpy
+pandas
+matplotlib
+seaborn
+scikit-learn
+ucimlrepo
+
