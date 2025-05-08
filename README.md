@@ -58,7 +58,22 @@ project/
 └── requirements.txt        # Python dependencies
 ```
 
-.
+## 🚀 How to Run
+1) Open CTGANLast.ipynb in Jupyter or Colab.
+
+2) Run all cells sequentially:
+
+    Fetch and preprocess the dataset
+
+    Train baseline models (SVM, DT, KNN)
+
+    Use CTGAN to generate synthetic data
+
+    Retrain models on the balanced dataset
+
+3) Observe accuracy improvements and plots.
+
+
 
 ## 📈 Results Summary
 | Model         | Accuracy (Before) | Accuracy (After CTGAN) | Improvement |
