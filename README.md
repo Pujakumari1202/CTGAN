@@ -1,5 +1,6 @@
 ## 🧠 Enhancing Classifier Accuracy on Imbalanced Datasets using CTGAN
 
+
 # 📖 About the Project
 This project addresses the challenge of class imbalance in classification problems by comparing traditional machine learning performance before and after synthetic data augmentation.
 
@@ -17,6 +18,8 @@ KNN: +6% accuracy
 
 This demonstrates the importance of choosing domain-specific generative models like CTGAN when working with structured data.
 
+
+
 ## 📊 Dataset
 We used the Dry Bean Dataset from the UCI Machine Learning Repository:
 
@@ -26,6 +29,8 @@ Target: Type of Bean (7 classes)
 
 The dataset was imbalanced, making it ideal for studying the effect of synthetic oversampling techniques.
 
+
+
 ## ✨ Features
 Evaluation of ML models (SVM, DT, KNN) on imbalanced data
 
@@ -34,6 +39,8 @@ Attempted oversampling using vanilla GAN (unsuccessful)
 Successful augmentation using CTGAN
 
 Detailed comparison of model performance before and after augmentation
+
+
 
 ## 🛠️ Tech Stack
 Language: Python
@@ -49,6 +56,7 @@ pandas, numpy: Data processing
 matplotlib, seaborn: Visualization
 
 
+
 ```bash
 project/
 │
@@ -58,20 +66,22 @@ project/
 └── requirements.txt        # Python dependencies
 ```
 
+
 ## 🚀 How to Run
 1) Open CTGANLast.ipynb in Jupyter or Colab.
 
 2) Run all cells sequentially:
 
-    Fetch and preprocess the dataset
+            Fetch and preprocess the dataset
 
-    Train baseline models (SVM, DT, KNN)
+            Train baseline models (SVM, DT, KNN)
 
-    Use CTGAN to generate synthetic data
+            Use CTGAN to generate synthetic data
 
-    Retrain models on the balanced dataset
+            Retrain models on the balanced dataset
 
 3) Observe accuracy improvements and plots.
+
 
 
 
